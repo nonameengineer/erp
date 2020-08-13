@@ -1,0 +1,16 @@
+<div class="field">
+    <label>Цвет раздела</label>
+    <div class="colors">
+        <div class="color"
+             *ngFor="let color of colors"
+             [ngStyle]="{'background-color': color}"
+             [ngClass]="{'color--active': color === value}">
+            <input type="radio"
+                   [attr.value]="color"
+                   (blur)="onBlur(color)"
+                   (change)="onChange(color)"
+                   (focus)="onFocus(color)"
+                   [checked]="value === color"/>
+        </div>
+    </div>
+</div>

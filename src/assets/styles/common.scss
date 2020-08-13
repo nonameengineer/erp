@@ -1,0 +1,83 @@
+.card {
+  background-color: #FFFFFF;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+
+  &__wrapper {
+    width: 382px;
+    margin: 24px auto;
+    min-height: inherit;
+    position: relative;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 21px;
+    color: #22242C;
+  }
+
+  &__content {
+    margin-top: 24px;
+    height: 100%;
+  }
+
+  &__bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+.field {
+  label {
+    font-weight: 600;
+    font-size: 13px;
+    color: #22242C;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+  }
+
+  input {
+    border: 1px solid #C3CEE0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    height: 48px;
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  &:nth-child(2) {
+    margin-top: 16px;
+  }
+}
+
+.button-primary {
+  cursor: pointer;
+  background: #409BEF;
+  border-radius: 6px;
+  height: 48px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.button-cancel {
+  cursor: pointer;
+  color: #409BEF;
+  font-weight: 500;
+  font-size: 16px;
+}

@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card__wrapper">
+        <div class="card__header">
+            <div class="card__title">Изменить позицию</div>
+            <div class="button-cancel" (click)="onCancel()">Отмена</div>
+        </div>
+        <div class="card__content" [formGroup]="form">
+            <div class="field">
+                <label>Название</label>
+                <input type="text" placeholder="Введите название позиции" formControlName="name">
+            </div>
+            <div class="field">
+                <label>Цена</label>
+                <input type="text" placeholder="0 ₽" formControlName="sale">
+            </div>
+        </div>
+        <div class="card__bottom">
+            <div class="button-primary" (click)="onSave()">Сохранить</div>
+        </div>
+    </div>
+</div>

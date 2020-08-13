@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/fonts.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: IBMPlexSans, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+
+  :focus {
+    outline: unset;
+  }
+}
+
+body {
+  background: #ECF1F9;
+}

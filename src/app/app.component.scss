@@ -1,0 +1,26 @@
+.wrapper {
+  width: 414px;
+  margin: 0 auto;
+}
+
+.main-menu {
+  width: 390px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.notif-user {
+  width: 80px;
+  height: 24px;
+}
+
+.title {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #22242C;
+}

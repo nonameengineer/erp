@@ -1,0 +1,16 @@
+<div class="line" [ngClass]="{'line--active': active}">
+    <div class="menu" (click)="onDropdown($event)" [ngClass]="{'menu--active': activeMenu}">
+        <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="1" cy="1" r="1" transform="rotate(90 1 1)" fill="#22242C"/>
+            <circle cx="1" cy="6" r="1" transform="rotate(90 1 6)" fill="#22242C"/>
+            <circle cx="1" cy="11" r="1" transform="rotate(90 1 11)" fill="#22242C"/>
+        </svg>
+    </div>
+    <span>{{item?.name}}</span>
+    <span>{{item?.sale + ' ₽'}}</span>
+    <div class="dropdown-wrapper" *ngIf="activeMenu">
+        <app-dropdown class="dropdown"
+                      [type]="'item'"
+                      [name]="item?.name"></app-dropdown>
+    </div>
+</div>
